@@ -73,7 +73,7 @@ object FViewCarrinho: TFViewCarrinho
       ItemIndex = 0
       Items.Strings = (
         'Banco Inter'
-        'Bando do Brasil')
+        'Banco do Brasil')
       TabOrder = 1
     end
   end
