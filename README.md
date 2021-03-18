@@ -1,0 +1,1 @@
+# delphi-pattern-visitor
