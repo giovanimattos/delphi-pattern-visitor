@@ -13,7 +13,7 @@ type
   public
     class function New: IEmissorDeBoleto;
     constructor Create;
-    function Visit(Carrinho: ICarrinho): IEmissorDeBoleto;
+    function VisitCarrinho(Carrinho: ICarrinho): IEmissorDeBoleto;
     function GeraBoleto: IEmissorDeBoleto;
   end;
 
@@ -34,7 +34,7 @@ begin
   FEmissor := 'Banco Inter';
 end;
 
-function TBoletoBancoInter.Visit(Carrinho: ICarrinho): IEmissorDeBoleto;
+function TBoletoBancoInter.VisitCarrinho(Carrinho: ICarrinho): IEmissorDeBoleto;
 begin
   Result := Self;
   FCarrinho := Carrinho;

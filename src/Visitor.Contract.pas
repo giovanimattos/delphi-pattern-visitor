@@ -17,7 +17,7 @@ type
 
   IEmissorDeBoleto = interface
     ['{2449BB9A-2BB7-49FC-B7E5-829647CFB18A}']
-    function Visit(Carrinho: ICarrinho): IEmissorDeBoleto;
+    function VisitCarrinho(Carrinho: ICarrinho): IEmissorDeBoleto;
     function GeraBoleto: IEmissorDeBoleto;
   end;
 

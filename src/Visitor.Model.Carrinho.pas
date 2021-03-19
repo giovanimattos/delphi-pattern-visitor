@@ -26,7 +26,7 @@ implementation
 function TModelCarrinho.AcceptAndPay(EmissorDeBoleto: IEmissorDeBoleto): ICarrinho;
 begin
   Result := Self;
-  EmissorDeBoleto.Visit( Self ).GeraBoleto;
+  EmissorDeBoleto.VisitCarrinho( Self ).GeraBoleto;
 end;
 
 function TModelCarrinho.Total: Currency;
